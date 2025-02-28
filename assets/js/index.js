@@ -142,3 +142,19 @@ document.querySelectorAll('.footer-menu-link').forEach(link => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const heroTitle = document.querySelector(".hero-media");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                heroTitle.classList.add("show");
+                observer.disconnect();
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    observer.observe(heroTitle);
+});
