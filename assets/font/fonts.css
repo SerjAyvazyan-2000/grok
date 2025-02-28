@@ -1,0 +1,37 @@
+
+
+
+@font-face {
+    font-family: "Aktiv Grotesk VF Trial";
+    src: url('AktivGrotesk_Trial_Lt.woff') format('woff'),
+    local('AktivGrotesk_Trial_Lt.woff');
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "Aktiv Grotesk VF Trial";
+    src: url('AktivGrotesk_Trial_Rg.woff') format('woff'),
+    local('AktivGrotesk_Trial_Rg.woff');
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "Aktiv Grotesk VF Trial";
+    src: url('AktivGrotesk_Trial_Md.woff') format('woff'),
+    local('AktivGrotesk_Trial_Md.woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Aktiv Grotesk VF Trial";
+    src: url('AktivGrotesk_Trial_SBd.woff') format('woff'),
+    local('AktivGrotesk_Trial_SBd.woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Aktiv Grotesk VF Trial";
+    src: url('AktivGrotesk_Trial_Bd.woff') format('woff'),
+    local('AktivGrotesk_Trial_Bd.woff');
+    font-weight: 700;
+}

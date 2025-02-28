@@ -1,0 +1,168 @@
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(5, 5, 5, 1);
+    --black2: rgba(0, 0, 0, 1);
+    --black3: rgba(8, 8, 8, 0.6);
+    --dark-black: rgba(8, 8, 8, 1);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main {
+    flex: 1 1 auto;
+    margin-top: 34px;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.bnt-white{
+    background: var(--white);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19.2px;
+    text-align: center;
+    gap: 10px;
+    color: var(--black2);
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.bnt-white::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(135deg, var(--black2), var(--black3));
+    transition: all 0.4s ease-in-out;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+}
+
+.bnt-white:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.bnt-white:hover {
+    color: var(--white);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.block-cnt{
+    margin-top: 60px;
+}
+.text-wrap {
+    display: block;
+}
+
+.desktop-text-wrap {
+    display: block;
+}
+
+.icon-arrow-outward{
+    font-size: 10px;
+    background: var(--black2);
+
+}
+
+.section{
+    margin-top: 120px;
+}
+.block-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25.6px;
+    text-align: center;
+    color: var(--white);
+
+}
+
+.img-mobile{
+    display: none;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+    .desktop-text-wrap {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .bnt-white{
+        font-size: 12px;
+        line-height: 15.36px;
+        border-radius: 10px;
+        gap: 8px;
+    }
+    .icon-arrow-outward {
+        font-size: 7px;
+    }
+    .mobile-text-wrap {
+        display: block;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+    .img-desktop{
+        display: none;
+    }
+
+    .section{
+        margin-top: 70px;
+    }
+    .advantages-media{
+        margin-top: 30px;
+    }
+
+    .block-title{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19.2px;
+
+
+    }
+    .block-cnt{
+        margin-top: 30px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+}
